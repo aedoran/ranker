@@ -1,9 +1,9 @@
+# What?
 basically, its this: http://en.wikipedia.org/wiki/PageRank
-
 but you get to sepecify the data, and how to evaluate compare each data.
 
-example:
-
+# Example:
+```javascript
 var ranker = require("ranker");
 
 //generate alot of numbers
@@ -33,5 +33,5 @@ var r = ranker({
 
 
 
-//
 console.log(r.run());
+```
