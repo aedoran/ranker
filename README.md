@@ -35,3 +35,12 @@ var r = ranker({
 
 console.log(r.run());
 ```
+
+
+# Options
+* **data (required):** array of nodes
+* **comp (required):** function that compares two nodes
+* **debug:** bool flag to shows how fast things are taking, default:false
+* **dampener:** float, default: .85
+* **epsilon:** float for determining when to stop iterating. Iterations will stop when change in ranking is smaller than this value. default:.00001
+* **max_iter:** integer of number of interations to try before giving up 
